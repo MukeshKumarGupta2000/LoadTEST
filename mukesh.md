@@ -1907,6 +1907,7 @@ cd Download/
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ cd Downloads/
@@ -1918,6 +1919,7 @@ ls
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ ls
@@ -1931,6 +1933,7 @@ unzip finobank-ptaplus-settlement.zip
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ unzip finobank-ptaplus-settlement.zip
@@ -2018,6 +2021,7 @@ ls
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ ls
@@ -2043,6 +2047,7 @@ tar -zxvf loadtestimage.tar.gz
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
@@ -2136,6 +2141,7 @@ The command you provided, **podman load -i loadtestimage.tar.gz**, is used in th
 
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ podman load -i loadtestimage.tar.gz
@@ -2167,6 +2173,7 @@ podman images
 **podman images** is a command-line interface (CLI) command used in Podman, a containerization tool similar to Docker. It is used to list the locally available container images on your system. 
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ podman images
@@ -2183,6 +2190,7 @@ sudo apt update
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ sudo apt update
@@ -2210,6 +2218,7 @@ m@k:~/Downloads$
 ~~~
 sudo snap install --classic code
 ~~~
+
 when you run **`sudo snap install --classic code`,** you are instructing the system to download and install the Snap package for Visual Studio Code with classic confinement, enabling the necessary permissions for the code editor to function effectively.
 
 ~~~
@@ -2223,6 +2232,7 @@ ls
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ ls
 101355f1d464c81e8453a810eefc8fbbb28806e647d8d6cf51b25c2ba11cc588.tar   c4d5c5bfdad412d0d5d4e970a2e36d8c5427175b990a47b09c2780d665ba69df.tar
@@ -2249,6 +2259,7 @@ cd finobank-ptaplus-settlement/
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ cd finobank-ptaplus-settlement/
@@ -2262,6 +2273,7 @@ sudo apt install maven
 
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
 m@k:~/Downloads/finobank-ptaplus-settlement$ sudo apt install maven
@@ -3717,6 +3729,7 @@ localhost/loadtest:v1: Specifies the Docker image to use for the container. In t
 
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ podman run -itd --name loadtesting -p 8089:8089 -v /home/m/:/mnt/locust localhost/loadtest:v1 -f /mnt/locust/locustfile.py
@@ -3737,6 +3750,7 @@ The **podman ps** command is used to list running containers and provide informa
 
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ podman ps
@@ -3767,6 +3781,7 @@ podman pod create --name timescale --publish 5432:5432 --publish 3000:3000
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ podman pod create --name timescale --publish 5432:5432 --publish 3000:3000
@@ -3792,6 +3807,7 @@ podman pod ps
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ podman pod ps
 POD ID        NAME        STATUS      CREATED        INFRA ID      # OF CONTAINERS
@@ -3811,6 +3827,7 @@ cd Downloads/
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ cd Downloads/
@@ -3823,6 +3840,7 @@ mkdir -p ~/postgres/data/ ~/grafana/data
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ mkdir -p ~/postgres/data/ ~/grafana/data
@@ -3836,6 +3854,7 @@ vim script.sh
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ vim script.sh
@@ -3884,6 +3903,7 @@ pwd
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ pwd
 /home/m/Downloads
@@ -3897,6 +3917,7 @@ chmod 775 script.sh
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
@@ -3914,6 +3935,7 @@ bash  script.sh
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ bash  script.sh
@@ -3970,6 +3992,7 @@ podman ps
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ podman ps
 CONTAINER ID  IMAGE                                COMMAND               CREATED        STATUS            PORTS                                           NAMES
@@ -3992,6 +4015,7 @@ cd ~/grafana/
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ cd ~/grafana/
@@ -4008,6 +4032,7 @@ sudo apt install jq
 
 
 #### OUTPUT
+
 ~~~
 m@k:~/grafana$ 
 m@k:~/grafana$ sudo apt install jq
@@ -4092,6 +4117,7 @@ bash pipeline.sh
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~/grafana$ 
 m@k:~/grafana$ bash pipeline.sh
@@ -4234,6 +4260,7 @@ podman exec -it timescale-postgres bash
 ~~~
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ podman exec -it timescale-postgres bash
@@ -4334,6 +4361,7 @@ You can add panels in grafana to get the graphical view of the responses.
 
 
 #### OUTPUT
+
 ~~~
 m@k:~$ 
 m@k:~$ podman run -itd --name loadtesting -p 8089:8089 -v /home/m/locust:/mnt/locust localhost/loadtest:v1 -f /mnt/locust/locustfile.py --timescale --grafana-url=http:/192.168.122.106:3000 --pghost=192.168.122.106 --pgport=5432 --pgpassword=password --pguser=postgres
