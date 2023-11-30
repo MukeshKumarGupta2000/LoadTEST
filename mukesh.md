@@ -115,10 +115,10 @@ echo "deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers
 ~~~
 
 #### OUTPUT
-
+~~~
 [sudo] password for m: 
 deb https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /
-
+~~~
 
 ~~~
 curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/Release.key" | sudo apt-key add 
@@ -126,11 +126,12 @@ curl -L "https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:
 
 
 #### OUTPUT
+~~~
  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100  1093  100  1093    0     0    793      0  0:00:01  0:00:01 --:--:--   793
 OK
-
+~~~
 
 
 ~~~
@@ -143,6 +144,7 @@ distributions, such as Ubuntu, to update the package repository
 information on your system. 
 
 ### OUTPUT
+~~~
 Hit:1 http://packages.microsoft.com/repos/code stable InRelease
 Hit:2 http://security.ubuntu.com/ubuntu focal-security InRelease                                                                                  
 Get:3 https://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04  InRelease [1,642 B]                           
@@ -155,7 +157,7 @@ Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
 257 packages can be upgraded. Run 'apt list --upgradable' to see them.
-
+~~~
 
 ~~~
 sudo apt upgrade
@@ -170,6 +172,8 @@ The **sudo apt upgrade** command is used in Linux-based operating systems, such 
 
 
 ### OUTPUT
+
+~~~
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -1124,7 +1128,7 @@ Found initrd image: /boot/initrd.img-5.15.0-67-generic
 Found memtest86+ image: /boot/memtest86+.elf
 Found memtest86+ image: /boot/memtest86+.bin
 done
-
+~~~
 
 
 
@@ -1136,6 +1140,7 @@ The command s**udo apt -y install podman** is used to install the Podman contain
 
 
 ### OUTPUT
+~~~
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -1252,7 +1257,7 @@ Processing triggers for libc-bin (2.31-0ubuntu9.12) ...
 Processing triggers for man-db (2.9.1-1) ...
 Processing triggers for initramfs-tools (0.136ubuntu6.7) ...
 update-initramfs: Generating /boot/initrd.img-5.15.0-89-generic
-
+~~~
 
 
 
@@ -1273,8 +1278,9 @@ podman --version
 ~~~
 
 ### OUTPUT
+~~~
 podman version 3.4.2
-
+~~~
 
 **Step 2:-**
 
@@ -1286,6 +1292,7 @@ sudo apt install python3-pip
 The command **sudo apt install python3-pip** is used to install the Python package manager called pip for Python 3.x. Let's break down what this command does
 
 ### OUTPUT
+~~~
 Reading package lists... Done
 Building dependency tree       
 Reading state information... Done
@@ -1521,7 +1528,7 @@ Setting up build-essential (12.8ubuntu1.1) ...
 Setting up python3-dev (3.8.2-0ubuntu2) ...
 Processing triggers for man-db (2.9.1-1) ...
 Processing triggers for libc-bin (2.31-0ubuntu9.12) ...
-
+~~~
 
 
 
