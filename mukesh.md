@@ -4042,6 +4042,7 @@ bash pipeline.sh
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/grafana$ 
 m@k:~/grafana$ bash pipeline.sh
 {"datasource":{"id":1,"uid":"mcF92nHSk","orgId":1,"name":"locust_timescale","type":"postgres","typeLogoUrl":"","access":"proxy","url":"postgres:5432","password":"","user":"postgres","database":"postgres","basicAuth":false,"basicAuthUser":"","basicAuthPassword":"","withCredentials":false,"isDefault":false,"jsonData":{"postgresVersion":1200,"sslmode":"disable","timescaledb":true},"secureJsonFields":{"password":true},"version":1,"readOnly":false},"id":1,"message":"Datasource added","name":"locust_timescale"}Processing 10878: *   Trying 192.168.122.106:3000...
@@ -4162,7 +4163,7 @@ Processing 15419: *   Trying 192.168.122.106:3000...
 {"uid":"fnu5nkF7z","pluginId":"","title":"Locust Scatter plot","imported":true,"importedUri":"db/locust-scatter-plot","importedUrl":"/d/fnu5nkF7z/locust-scatter-plot","slug":"locust-scatter-plot","dashboardId":4,"folderId":0,"importedRevision":1,"revision":1,"description":"","path":"","removed":false}
 m@k:~/grafana$ 
 m@k:~/grafana$ 
-
+~~~
 
 
 **Step 30:-**
@@ -4170,22 +4171,25 @@ m@k:~/grafana$
 ~~~
 cd
 ~~~
-
+~~~
 #### OUTPUT
 m@k:~/grafana$ 
 m@k:~/grafana$ cd
 m@k:~$ 
 m@k:~$ 
+~~~
 
 ~~~
 podman exec -it timescale-postgres bash
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ podman exec -it timescale-postgres bash
 bash-5.1# 
-bash-5.1# 
+bash-5.1#
+~~~
 
 **Step 31:-**
 
@@ -4194,6 +4198,8 @@ psql -U postgres
 ~~~
 
 #### OUTPUT
+
+~~~
 bash-5.1# 
 bash-5.1# psql -U postgres
 psql (13.7)
@@ -4201,6 +4207,7 @@ Type "help" for help.
 
 postgres=# 
 postgres=# 
+~~~
 
 **Step 32:-**
 
@@ -4209,6 +4216,8 @@ postgres=#
 ~~~
 
 #### OUTPUT
+
+~~~
 postgres=# 
 postgres=# \dt
            List of relations
@@ -4222,7 +4231,7 @@ postgres=# \dt
 
 postgres=# 
 postgres=# 
-
+~~~
 
 
 **Step 33:-**
@@ -4233,6 +4242,8 @@ select * from user_count;
 
 
 #### OUTPUT
+
+~~~
 postgres=# 
 postgres=# select * from user_count;
  testplan | user_count | time | run_id 
@@ -4242,7 +4253,7 @@ postgres=# select * from user_count;
 postgres=# 
 postgres=# 
 postgres=# 
-
+~~~
 
 
 **Step 34:-**
@@ -4273,11 +4284,12 @@ You can add panels in grafana to get the graphical view of the responses.
 
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ podman run -itd --name loadtesting -p 8089:8089 -v /home/m/locust:/mnt/locust localhost/loadtest:v1 -f /mnt/locust/locustfile.py --timescale --grafana-url=http:/192.168.122.106:3000 --pghost=192.168.122.106 --pgport=5432 --pgpassword=password --pguser=postgres
 a94437a62ccaf8d78f2f3da56fe12bc3bce7fc905af69de0c0fb12574a0c2bc9
 m@k:~$ 
 m@k:~$ 
-
+~~~
 
 
