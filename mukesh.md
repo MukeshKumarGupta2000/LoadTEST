@@ -1907,28 +1907,31 @@ cd Download/
 ~~~
 
 #### OUTPUT
-
+~~~
 m@k:~$ 
 m@k:~$ cd Downloads/
 m@k:~/Downloads$ 
+~~
 
 ~~~
 ls
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ ls
 code_1.84.2-1699528352_amd64.deb  finobank-ptaplus-settlement.zip  loadtestimage.tar.gz  LoadTestSetup1-main  LoadTestSetup1-main.zip
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
-
+~~~
 
 ~~~
 unzip finobank-ptaplus-settlement.zip
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ unzip finobank-ptaplus-settlement.zip
 Archive:  finobank-ptaplus-settlement.zip
@@ -2005,7 +2008,7 @@ Archive:  finobank-ptaplus-settlement.zip
    creating: finobank-ptaplus-settlement/target/quarkus/
    creating: finobank-ptaplus-settlement/target/quarkus/bootstrap/
 m@k:~/Downloads$ 
-
+~~~
 
 
 **Step 12:-**
@@ -2015,6 +2018,7 @@ ls
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ ls
 101355f1d464c81e8453a810eefc8fbbb28806e647d8d6cf51b25c2ba11cc588.tar   c2b88f1dd9cc8674a90dd26641a74f7f3a0c45c43f5d15b29b3118e5b3a17f11
@@ -2032,13 +2036,14 @@ m@k:~/Downloads$ ls
 9b5b1c24568660b89cc5a4103e5fa81afca3c67e042182975217f7c047898593       manifest.json
 ad1f370f2a87fc2380c3621a7666846cd6a3c3a2f2b1183eeb53074051ecbaf0.tar   repositories
 m@k:~/Downloads$ 
-
+~~~
 
 ~~~
 tar -zxvf loadtestimage.tar.gz
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
 m@k:~/Downloads$ unzip finobank-ptaplus-settlement.zip
@@ -2117,7 +2122,7 @@ Archive:  finobank-ptaplus-settlement.zip
    creating: finobank-ptaplus-settlement/target/quarkus/bootstrap/
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
-m@k:~/Downloads$ 
+~~~
 
 
 **Step 13:-**
@@ -2131,6 +2136,7 @@ The command you provided, **podman load -i loadtestimage.tar.gz**, is used in th
 
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ podman load -i loadtestimage.tar.gz
 Getting image source signatures
@@ -2150,6 +2156,7 @@ Storing signatures
 Loaded image(s): localhost/loadtest:v1
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
+~~~
 
 **Step 14:-**
 
@@ -2160,12 +2167,14 @@ podman images
 **podman images** is a command-line interface (CLI) command used in Podman, a containerization tool similar to Docker. It is used to list the locally available container images on your system. 
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ podman images
 REPOSITORY          TAG         IMAGE ID      CREATED       SIZE
 localhost/loadtest  v1          49a55a1d94ca  6 months ago  546 MB
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
+~~~
 
 **Step 15:-**
 
@@ -2174,6 +2183,7 @@ sudo apt update
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ sudo apt update
 [sudo] password for m: 
@@ -2195,6 +2205,7 @@ Reading state information... Done
 All packages are up to date.
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
+~~~
 
 ~~~
 sudo snap install --classic code
@@ -2212,6 +2223,7 @@ ls
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ ls
 101355f1d464c81e8453a810eefc8fbbb28806e647d8d6cf51b25c2ba11cc588.tar   c4d5c5bfdad412d0d5d4e970a2e36d8c5427175b990a47b09c2780d665ba69df.tar
 1f58c608c7a00293999e307d892e7507da86745cd9569e1f432e3efe63f015c7.tar   c93c094df115fe5728c02dbf45a5c7d6b6e5e57054deb4206c0037e1dbde3ae4
@@ -2229,7 +2241,7 @@ m@k:~/Downloads$ ls
 ad1f370f2a87fc2380c3621a7666846cd6a3c3a2f2b1183eeb53074051ecbaf0.tar   repositories
 c2b88f1dd9cc8674a90dd26641a74f7f3a0c45c43f5d15b29b3118e5b3a17f11
 m@k:~/Downloads$ 
-
+~~~
 
 
 ~~~
@@ -2237,10 +2249,11 @@ cd finobank-ptaplus-settlement/
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ cd finobank-ptaplus-settlement/
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
-
+~~~
 
 
 ~~~
@@ -2249,6 +2262,7 @@ sudo apt install maven
 
 
 #### OUTPUT
+~~~
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
 m@k:~/Downloads/finobank-ptaplus-settlement$ sudo apt install maven
 [sudo] password for m: 
@@ -2621,10 +2635,10 @@ Processing triggers for ca-certificates (20230311ubuntu0.20.04.1) ...
 Updating certificates in /etc/ssl/certs...
 0 added, 0 removed; done.
 Running hooks in /etc/ca-certificates/update.d...
-
 done.
 done.
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
+~~~
 
 **Step 17**
 
@@ -2638,6 +2652,7 @@ The command **mvn clean compile quarkus:dev -DskipTests** is used in the context
 
 
 #### OUTPUT
+~~~
 m@k:~/Downloads/finobank-ptaplus-settlement$ mvn clean compile quarkus:dev -DskipTest
 Downloading from central: https://repo.maven.apache.org/maven2/io/quarkus/quarkus-project-core-extension-codestarts/2.16.9.Final/quarkus-project-core-extension-codestarts-2.16.9.Final.jar
 Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.9.2/junit-jupiter-api-5.9.2.jar (208 kB at 94 kB/s)
@@ -3590,6 +3605,7 @@ Tests paused
 [INFO] ------------------------------------------------------------------------
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
+~~~
 
 **Step 18:-** **Change the IP address , according to your System IP**
 
@@ -3599,6 +3615,7 @@ mvn clean compile quarkus:dev -DskipTests -Dquarkus.http.host=192.168.122.82
 
 
 #### OUTPUT
+~~~
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
 m@k:~/Downloads/finobank-ptaplus-settlement$ mvn clean compile quarkus:dev -DskipTests -Dquarkus.http.host=192.168.122.106
@@ -3656,6 +3673,7 @@ Tests paused
 [INFO] ------------------------------------------------------------------------
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
 m@k:~/Downloads/finobank-ptaplus-settlement$ 
+~~~
 
 **Step 19:-** **Go to main terminal**
 
@@ -3699,11 +3717,13 @@ localhost/loadtest:v1: Specifies the Docker image to use for the container. In t
 
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ podman run -itd --name loadtesting -p 8089:8089 -v /home/m/:/mnt/locust localhost/loadtest:v1 -f /mnt/locust/locustfile.py
 43acddcca803324e3de6d5e9a18620c086424788c9c6abf0c983b5c846145252
 m@k:~$ 
 m@k:~$
+~~~
 
 **Step 21:-**
 
@@ -3717,11 +3737,13 @@ The **podman ps** command is used to list running containers and provide informa
 
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ podman ps
 CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES
 m@k:~$ 
 m@k:~$ 
+~~~
 
 ~~~
 locust -f locustfile.py
@@ -3745,11 +3767,13 @@ podman pod create --name timescale --publish 5432:5432 --publish 3000:3000
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ podman pod create --name timescale --publish 5432:5432 --publish 3000:3000
 d3cfa7c631da5ad98112d7ee100f58a5b7c7b22c1a5c938649dfb0ff20c6bc27
 m@k:~$ 
 m@k:~$
+~~~
 
 **podman** command-line tool is used to manage pods on your system.
 
@@ -3768,11 +3792,13 @@ podman pod ps
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~$ podman pod ps
 POD ID        NAME        STATUS      CREATED        INFRA ID      # OF CONTAINERS
 d3cfa7c631da  timescale   Created     3 minutes ago  dbba4a2063c4  1
 m@k:~$ 
 m@k:~$
+~~~
 
 **podman pod ps** command is used to list the pods currently running on your system when you're using Podman, which is a container management tool similar to Docker.
 
@@ -3785,20 +3811,23 @@ cd Downloads/
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ cd Downloads/
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
+~~~
 
 ~~~
 mkdir -p ~/postgres/data/ ~/grafana/data
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ mkdir -p ~/postgres/data/ ~/grafana/data
 m@k:~/Downloads$ 
-
+~~~
 
 
 
@@ -3807,10 +3836,11 @@ vim script.sh
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ vim script.sh
 m@k:~/Downloads$ 
-
+~~~
 
 
 **Put this script**
@@ -3854,10 +3884,11 @@ pwd
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ pwd
 /home/m/Downloads
 m@k:~/Downloads$ 
-
+~~~
 
 ***Step 24:-**
 
@@ -3866,11 +3897,13 @@ chmod 775 script.sh
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
 m@k:~/Downloads$ chmod 775 script.sh
 m@k:~/Downloads$ 
 m@k:~/Downloads$ 
+~~~
 
 The command **chmod 775 script.sh** is used to change the permissions of a file named script.sh. 
 
@@ -3881,6 +3914,7 @@ bash  script.sh
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ bash  script.sh
 ✔ docker.io/cyberw/locust-timescale:4
@@ -3928,6 +3962,7 @@ Writing manifest to image destination
 Storing signatures
 088d5183409206c6b274e369ee4354bcda0e3a53ea31689e08b07e643691c22e
 m@k:~$ 
+~~~
 
 
 ~~~
@@ -3935,6 +3970,7 @@ podman ps
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~$ podman ps
 CONTAINER ID  IMAGE                                COMMAND               CREATED        STATUS            PORTS                                           NAMES
 632bc4664672  localhost/loadtest:v1                -f /mnt/locust/lo...  3 hours ago    Up 3 hours ago    0.0.0.0:8089->8089/tcp                          loadtesting
@@ -3942,7 +3978,7 @@ dbba4a2063c4  k8s.gcr.io/pause:3.5                                       2 hours
 14a845457a50  docker.io/cyberw/locust-timescale:4  postgres              8 minutes ago  Up 8 minutes ago  0.0.0.0:3000->3000/tcp, 0.0.0.0:5432->5432/tcp  timescale-postgres
 088d51834092  docker.io/cyberw/locust-grafana:2                          8 minutes ago  Up 8 minutes ago  0.0.0.0:3000->3000/tcp, 0.0.0.0:5432->5432/tcp  timescale-grafana
 m@k:~$ 
-
+~~~
 
 
 **podman** command-line tool is used to manage pods on your system.
@@ -3956,11 +3992,12 @@ cd ~/grafana/
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~$ 
 m@k:~$ cd ~/grafana/
 m@k:~/grafana$ 
 m@k:~/grafana$ 
-
+~~~
 
 
 **Step 27:-**
@@ -3971,6 +4008,7 @@ sudo apt install jq
 
 
 #### OUTPUT
+~~~
 m@k:~/grafana$ 
 m@k:~/grafana$ sudo apt install jq
 [sudo] password for m: 
@@ -4006,6 +4044,7 @@ Processing triggers for man-db (2.9.1-1) ...
 Processing triggers for libc-bin (2.31-0ubuntu9.12) ...
 m@k:~/grafana$ 
 m@k:~/grafana$
+~~~
 
 **Step 28:-**
 
@@ -4014,10 +4053,11 @@ Vim pipeline.sh
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/Download$ 
 m@k:~/Downloads$ vim pipeline.sh
 m@k:~/Downloads$ 
-
+~~~
 
 
 **Put this script**
