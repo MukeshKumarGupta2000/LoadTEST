@@ -1655,6 +1655,8 @@ pip3 install locust_plugins
 
 
 ### OUTPUT
+
+~~~
 Collecting locust_plugins
   Downloading locust_plugins-4.2.0-py3-none-any.whl (1.4 MB)
      |████████████████████████████████| 1.4 MB 6.2 MB/s 
@@ -1692,7 +1694,7 @@ Requirement already satisfied: zipp>=0.5 in ./.local/lib/python3.8/site-packages
 Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from zope.event->gevent>=22.10.2->locust>=2.16.1->locust_plugins) (45.2.0)
 Installing collected packages: typing-extensions, locust-plugins
 Successfully installed locust-plugins-4.2.0 typing-extensions-4.8.0
-
+~~~
 
 
 **pip3:** The package installer for Python3
@@ -1709,6 +1711,7 @@ pip3 show locust
 
 
 ### OUTPUT
+~~~
 Name: locust
 Version: 2.19.0
 Summary: Developer friendly load testing framework
@@ -1719,6 +1722,7 @@ License: MIT
 Location: /home/m/.local/lib/python3.8/site-packages
 Requires: Flask-Cors, ConfigArgParse, msgpack, roundrobin, geventhttpclient, Flask-BasicAuth, Werkzeug, pyzmq, requests, flask, gevent, psutil
 Required-by: locust-plugins
+~~~
 
 **pip3:** The package installer for Python 3. It is a command-line tool for installing and managing Python packages.
 
@@ -1734,11 +1738,11 @@ sudo mkdir locust
 
 The command **sudo mkdir locust** is a Unix/Linux command that creates a new directory (folder) named "locust" with administrative privileges using the sudo command.
 
-
+~~~
 m@k:~$ sudo mkdir locust
 [sudo] password for m: 
 m@k:~$ 
-
+~~~
 
 
 ~~~
@@ -1748,11 +1752,12 @@ ls
 The **ls** command is used in Unix and Unix-like operating systems (including Linux) to list files and directories in a directory.
  
  ### OUTPUT
+ ~~~
 m@k:~$ 
 m@k:~$ ls
 Desktop  Documents  Downloads  locust  Music  Pictures  Public  snap  Templates  Videos
 m@k:~$ 
-
+~~~
 
 ~~~
 sudo touch locustfile.py
@@ -1764,9 +1769,11 @@ sudo touch locustfile.py
 The command you mentioned, **sudo touch locustfile.py**, is a Unix/Linux command used to create a new file named locustfile.py
 
 ### OUTPUT
+~~~
 m@k:~/locust$ 
 m@k:~/locust$ sudo touch locustfile.py
-m@k:~/locust$ 
+m@k:~/locust$
+~~~
 
 
 ~~~
@@ -1774,11 +1781,12 @@ ls
 ~~~
 
 ### OUTPUT
+~~~
 m@k:~/locust$ 
 m@k:~/locust$ ls
 locustfile.py
 m@k:~/locust$ 
-
+~~~
 
 **Step 7:-**
 
@@ -1787,10 +1795,12 @@ hostname -I
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/locust$ 
 m@k:~/locust$ hostname -I
 192.168.122.106 
 m@k:~/locust$
+~~~
 
 **Change the IP address , according to your System IP**
 
@@ -1801,6 +1811,7 @@ sudo apt install vim
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/locust$ 
 m@k:~/locust$ sudo apt install vim
 Reading package lists... Done
@@ -1841,7 +1852,7 @@ Processing triggers for man-db (2.9.1-1) ...
 m@k:~/locust$ 
 m@k:~/locust$ 
 m@k:~/locust$ 
-
+~~~
 
 
 The command **sudo apt install vim** is used in Linux to install the Vim text editor. Let me explain why you might want to use Vim:
@@ -1853,15 +1864,14 @@ sudo vim locustfile.py
 ~~~
 
 #### OUTPUT
+~~~
 m@k:~/locust$ 
 m@k:~/locust$ sudo vim locustfile.py
 m@k:~/locust$ 
 m@k:~/locust$ 
-
+~~~
 
 **Step 10:-**
-
-
 ~~~
 from locust import HttpUser, constant, task, between, TaskSet, SequentialTaskSet, events
 import locust_plugins
@@ -1886,8 +1896,7 @@ class InactiveUsers(SequentialTaskSet):
 class MyInactiveUsers(HttpUser):
     wait_time = between(1,2)
     tasks = [InactiveUsers]
-    host = "http://192.168.122.106:8080"
-                                                       
+    host = "http://192.168.122.106:8080"                                                      
 ~~~
 
 
@@ -1898,6 +1907,7 @@ cd Download/
 ~~~
 
 #### OUTPUT
+
 m@k:~$ 
 m@k:~$ cd Downloads/
 m@k:~/Downloads$ 
